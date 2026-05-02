@@ -1,0 +1,160 @@
+
+<style>
+  @import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,700;1,400;1,700&family=Lato:wght@300;400&display=swap');
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+  .page {
+    min-height: 640px;
+    background: #fff9e6;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 48px 28px;
+    position: relative;
+    overflow: hidden;
+    border-radius: 20px;
+  }
+  .petal {
+    position: absolute;
+    font-size: 16px;
+    opacity: 0.45;
+    animation: drift 7s ease-in-out infinite;
+    pointer-events: none;
+  }
+  @keyframes drift {
+    0% { transform: translateY(0) rotate(0deg); opacity: 0.45; }
+    60% { opacity: 0.6; }
+    100% { transform: translateY(-90px) rotate(25deg); opacity: 0; }
+  }
+  .card {
+    background: rgba(255,255,255,0.8);
+    border: 1.5px solid #f5d96b;
+    border-radius: 28px;
+    padding: 44px 48px;
+    max-width: 540px;
+    width: 100%;
+    text-align: center;
+    position: relative;
+    z-index: 2;
+  }
+  .icon-wrap {
+    font-size: 64px;
+    animation: pulse 1.6s ease-in-out infinite;
+    display: block;
+    margin-bottom: 18px;
+  }
+  @keyframes pulse {
+    0%, 100% { transform: scale(1); }
+    50% { transform: scale(1.15); }
+  }
+  .title {
+    font-family: 'Playfair Display', serif;
+    font-size: 38px;
+    font-weight: 700;
+    color: #b87200;
+    margin-bottom: 4px;
+  }
+  .subtitle {
+    font-family: 'Playfair Display', serif;
+    font-style: italic;
+    font-size: 15px;
+    color: #d4a000;
+    margin-bottom: 22px;
+  }
+  .rule {
+    width: 50px;
+    height: 1.5px;
+    background: #f5d96b;
+    margin: 0 auto 26px;
+    border-radius: 2px;
+  }
+  .body-text {
+    font-family: 'Lato', sans-serif;
+    font-size: 15.5px;
+    font-weight: 300;
+    line-height: 1.9;
+    color: #6b4c00;
+    margin-bottom: 28px;
+    text-align: left;
+  }
+  .body-text em {
+    font-style: italic;
+    color: #b87200;
+    font-weight: 400;
+  }
+  .quote-block {
+    border-left: 3px solid #f5d96b;
+    padding: 12px 18px;
+    margin: 20px 0;
+    background: rgba(255,249,230,0.7);
+    border-radius: 0 10px 10px 0;
+    font-family: 'Playfair Display', serif;
+    font-style: italic;
+    font-size: 15px;
+    color: #a06800;
+    text-align: left;
+  }
+  .hearts-row {
+    display: flex;
+    justify-content: center;
+    gap: 8px;
+    font-size: 20px;
+    margin-bottom: 26px;
+    animation: sway 2.5s ease-in-out infinite alternate;
+  }
+  @keyframes sway {
+    from { transform: translateX(-4px); }
+    to { transform: translateX(4px); }
+  }
+  .sign {
+    font-family: 'Playfair Display', serif;
+    font-style: italic;
+    font-size: 14px;
+    color: #c47c00;
+    margin-top: 18px;
+    opacity: 0.85;
+  }
+</style>
+
+<div class="page">
+  <span class="petal" style="left:7%;top:82%;animation-delay:0s;">💛</span>
+  <span class="petal" style="left:20%;top:75%;animation-delay:1.3s;font-size:12px;">🌼</span>
+  <span class="petal" style="left:75%;top:78%;animation-delay:0.6s;">💛</span>
+  <span class="petal" style="left:88%;top:70%;animation-delay:2s;font-size:12px;">✨</span>
+  <span class="petal" style="left:50%;top:86%;animation-delay:1s;font-size:11px;">💛</span>
+  <span class="petal" style="left:38%;top:80%;animation-delay:2.4s;font-size:11px;">🌸</span>
+  <span class="petal" style="left:62%;top:84%;animation-delay:1.7s;font-size:10px;">✨</span>
+
+  <div class="card">
+    <span class="icon-wrap">💛</span>
+    <div class="title">I'm So Sorry</div>
+    <div class="subtitle">I should have been there. I wasn't. I'm sorry.</div>
+    <div class="rule"></div>
+
+    <div class="body-text">
+      My love,<br><br>
+      I owe you more than an apology — I owe you an honest confession. 
+      I pulled away. I went quiet. I let the distance grow between us when you deserved the exact opposite — 
+      someone fully present, <em>fully there for you</em>.<br><br>
+      I know how that must have felt. To reach out and feel like no one was really reaching back.
+      To wonder if I still cared, when the truth is — <em>I care more than I know how to say</em>.
+    </div>
+
+    <div class="quote-block">
+      "You were not asking for too much. I was giving too little. That was my failure, not yours."
+    </div>
+
+    <div class="body-text">
+      You have never once made me feel unseen. You show up — <em>always</em> — with your whole heart.
+      You deserved that same energy back, every single day. I let you down, and I am deeply sorry for that.<br><br>
+      From this moment on, I choose to show up. To listen. To hold your hand when you need it. 
+      To be the person you see in me, even when I forget to see it in myself. 💛
+    </div>
+
+    <div class="hearts-row">
+      💛 💛 💛 💛 💛
+    </div>
+
+    <div class="sign">— Yours, always and completely 💛</div>
+  </div>
+</div>
